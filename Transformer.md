@@ -5,4 +5,7 @@
 2. QKV
 Positional Encoding（位置编码）
 ![](assets/Transformer/file-20260225105350419.png)
-pos指这个字
+pos：这个字在句子中的第几位
+d：嵌入维度
+i：具体第几个维度
+
