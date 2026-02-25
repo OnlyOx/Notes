@@ -48,3 +48,8 @@ Transformer真正的输入，不是词嵌入也不是PE，而是两者相加[4x5
 
 ![](assets/Transformer拆解学习/file-20260225191726159.png)
 
+QKV
+
+query 查询
+key 键
+value 值
