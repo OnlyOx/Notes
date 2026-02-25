@@ -42,3 +42,5 @@ i=0,2i+1=1,PE=cos1≈0.54
 而使用sin、cos利用和差化积，可以用前面位置编码的信息表示后面的位置编码
 
 例：PE(pos+k)可以由PE(pos)得到。公式为sin(a+b)=sinacosb+sinbcosa
+
+Transformer真正的输入，不是词嵌入也不是PE，而是两者相加[4x5]+[4x5]=[4x5]
