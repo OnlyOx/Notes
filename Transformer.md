@@ -5,4 +5,4 @@
 2. QKV
 Positional Encoding（位置编码）
 ![](assets/Transformer/file-20260225105350419.png)
-pos指zhe'ge'zu
+pos指这个字
