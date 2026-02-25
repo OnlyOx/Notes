@@ -19,4 +19,21 @@ i： 0-2，用2i或2i+1覆盖整个维度，对应0-4
 
 ![](assets/Transformer拆解学习/file-20260225113655251.png)
 
-sin0=0 cos0=1
+PE(pos,2i)=sin()
+PE(pos,2i+1)=cos()
+
+pos=0时,对应 "我" 这个字
+i=0,2i=0     ,PE=sin0=0
+i=0,2i+1=1,PE=cos0=1
+i=1,2i=2     ,PE=sin0=0
+i=1,2i+1=3,PE=cos0=1
+i=2,2i=4     ,PE=sin0=0
+
+“我”的位置编码为[0 1 0 1 0]
+
+pos=1时,对应 "爱" 这个字
+i=0,2i=0     ,PE=sin1≈0.84
+i=0,2i+1=1,PE=cos1=1
+i=1,2i=2     ,PE=sin1=0
+i=1,2i+1=3,PE=cos1=1
+i=2,2i=4     ,PE=sin1=0
