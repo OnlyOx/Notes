@@ -17,3 +17,6 @@ pos：0-3
 d: 5
 i： 0-2，用2i或2i+1覆盖整个维度，对应0-4
 
+![](assets/Transformer拆解学习/file-20260225113655251.png)
+
+sin0=0 cos0=1
