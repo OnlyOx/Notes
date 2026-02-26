@@ -68,3 +68,6 @@ value 值
 
 A=Q * Kt
 Z=A * Z
+
+![](assets/Transformer拆解学习/file-20260226194831110.png)
+
