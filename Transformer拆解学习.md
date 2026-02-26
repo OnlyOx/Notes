@@ -65,3 +65,6 @@ value 值
 
 ![](assets/Transformer拆解学习/file-20260226194236906.png)
 
+
+A=Q * Kt
+Z=A * Z
