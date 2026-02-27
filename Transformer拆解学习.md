@@ -91,9 +91,11 @@ Z=A * Z
 综合考虑一层所有维度的输入，计算该层的平均输入值和输入方差，然后用同一个规范化操作来转换各个维度的输入。
 
 ![](assets/Transformer拆解学习/file-20260227204434891.png)
-normalization不是对这20个维度取平均，而是先对第一个样本的1x5取平均
+normalization不是对这20个维度取平均，而是先对第一个样本的1x5取平均值得到归一化，再依次对第二、三等进行处理
 
 ~~**Batch Normalization（纵向规范化）**
 针对单个神经元进行，利用网络训练时一个 mini-batch 的数据来计算该神经元xi的均值和方差,因而称为 Batch Normalization~~
 
 batch size(批次大小)
+
+## 四、编码器
