@@ -87,7 +87,10 @@ Z=A * Z
 多头则可以把所有头的注意力权重都获取到
 
 
-layer normalization(**横向规范化**)
+**Layer Normalization（横向规范化）**
+综合考虑一层所有维度的输入，计算该层的平均输入值和输入方差，然后用同一个规范化操作来转换各个维度的输入。
 
+**Batch Normalization（纵向规范化）**
+针对单个神经元进行，利用网络训练时一个 mini-batch 的数据来计算该神经元xi的均值和方差,因而称为 Batch Normalization
 
 batch size(批次大小)
