@@ -86,3 +86,8 @@ Z=A * Z
 
 多头则可以把所有头的注意力权重都获取到
 
+
+layer normalization(**横向规范化**)
+
+
+batch size(批次大小)
