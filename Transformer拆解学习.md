@@ -7,6 +7,8 @@
 ## 1、Positional Encoding（位置编码）
 ![](assets/Transformer拆解学习/file-20260225111001619.png)
 
+$$PE_{(pos, 2i)} = \sin\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right)$$
+$$PE_{(pos, 2i+1)} = \cos\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right)$$
 pos：这个字在句子中的第几位
 d：嵌入维度
 i：具体第几个维度
@@ -41,7 +43,10 @@ i=0,2i+1=1,PE=cos1≈0.54
 
 而使用sin、cos利用和差化积，可以用前面位置编码的信息表示后面的位置编码
 
-例：PE(pos+k)可以由PE(pos)得到。公式为sin(a+b)=sinacosb+sinbcosa
+例：PE(pos+k)可以由PE(pos)得到。公式为
+
+$$\sin(a+b) = \sin a \cos b + \cos a \sin b
+$$
 
 Transformer真正的输入，不是词嵌入也不是PE，而是两者相加[4x5]+[4x5]=[4x5]
 
@@ -66,7 +71,7 @@ value 值
 
 ![](assets/Transformer拆解学习/file-20260226194236906.png)
 
-
+$$Attention(Q, K, V) = softmax\left(\frac{QK^T}{\sqrt{d_k}}\right)V$$
 A=Q * Kt
 Z=A * Z
 
