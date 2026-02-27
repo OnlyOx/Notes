@@ -71,3 +71,8 @@ Z=A * Z
 
 ![](assets/Transformer拆解学习/file-20260226194831110.png)
 
+多头注意力
+
+![](assets/Transformer拆解学习/file-20260227192235714.png)
+
+4x5为例，自注意力Z[4x5],多头注意力的一头Z1[4x1],Z由多头组成，又为[4x5]
