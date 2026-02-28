@@ -8,7 +8,9 @@
 ![](assets/Transformer拆解学习/file-20260225111001619.png)
 
 $$PE_{(pos, 2i)} = \sin\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right)$$
+
 $$PE_{(pos, 2i+1)} = \cos\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right)$$
+
 pos：这个字在句子中的第几位
 d：嵌入维度
 i：具体第几个维度
@@ -91,6 +93,7 @@ Z=A * Z
 综合考虑一层所有维度的输入，计算该层的平均输入值和输入方差，然后用同一个规范化操作来转换各个维度的输入。
 
 ![](assets/Transformer拆解学习/file-20260227204434891.png)
+
 normalization不是对这20个维度取平均，而是先对第一个样本的1x5取平均值得到归一化，再依次对第二、三等进行处理
 
 ~~**Batch Normalization（纵向规范化）**
