@@ -101,7 +101,12 @@ normalization不是对这20个维度取平均，而是先对第一个样本的1x
 
 batch size(批次大小)
 
-## 四、编码器
+## 四、编码器(Encoder)
 
 ![](assets/Transformer拆解学习/file-20260305154319467.png)
 
+一个**Encoder block** 经过一次多头注意力和多次**Layer Normalization（横向规范化）**、全连接层
+
+六个(N个)encoder block组成一个**Encoder**。输出[4x5]的矩阵，称为**Memory(编码信息矩阵)**
+
+## 五、解码器
