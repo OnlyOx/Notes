@@ -1,3 +1,5 @@
+![](assets/Transformer拆解学习/file-20260305161759104.png)
+
 # 一、词嵌入
 用一个一行多列的向量
 代替一个词
@@ -107,10 +109,10 @@ batch size(批次大小)
 
 一个**Encoder block** 经过一次多头注意力和多次**Layer Normalization（横向规范化）**、全连接层
 
-六个(N个)encoder block组成一个**Encoder**。输出[4x5]的矩阵，称为**Memory(编码信息矩阵)**
+六个encoder block组成一个**Encoder**。输出[4x5]的矩阵，称为**Memory(编码信息矩阵)**
 
 ## 五、解码器(Decoder)
 
 一个**Decoder block** 经过==两==次多头注意力和多次**Layer Normalization（横向规范化）**、全连接层
 
-六个(N个)encoder block组成一个**Encoder**
+六个dncoder block组成一个**Dncoder**
