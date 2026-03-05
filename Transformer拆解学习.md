@@ -129,3 +129,5 @@ batch size(批次大小)
 
 我爱中国(X)  |  <start> I love China(Y)
 
+X，词嵌入、位置编码；Y，词嵌入、位置编码
+
