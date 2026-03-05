@@ -125,5 +125,7 @@ batch size(批次大小)
 
 六个dncoder block组成一个**Dncoder**
 
-训练过程中，解码器接受两个输入，一个Y，一个编码信息矩阵
+==训练过程==中，解码器接受两个输入，一个Y，一个编码信息矩阵
+
+我爱中国(X)  |  <start> I love China(Y)
 
