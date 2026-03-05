@@ -102,3 +102,6 @@ normalization不是对这20个维度取平均，而是先对第一个样本的1x
 batch size(批次大小)
 
 ## 四、编码器
+
+![](assets/Transformer拆解学习/file-20260305154319467.png)
+
