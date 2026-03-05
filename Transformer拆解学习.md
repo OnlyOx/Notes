@@ -121,3 +121,7 @@ batch size(批次大小)
 一个**Decoder block** 经过==两==次多头注意力和多次**Layer Normalization（横向规范化）**、全连接层
 
 六个dncoder block组成一个**Dncoder**
+
+
+编码器将4×5的输入，编码成一个编码信息矩阵[4x5]。
+整个模型的最终输出，要借助解码器decoder，把编码信息矩阵里的信息给解码出来
