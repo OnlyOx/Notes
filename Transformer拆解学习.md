@@ -30,7 +30,7 @@ i： 0-2，用2i或2i+1覆盖整个维度，对应0-4
 $$PE_{(pos, 2i)} = \sin\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right)$$
 $$PE_{(pos, 2i+1)} = \cos\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right)$$
 
-pos=0时,对应 "我" 这个字
+pos=0时,对应 "我" 这个字[1x5]的d=5列对应0,1,2,3,4
 i=0,2i=0     ,PE=sin0=0
 i=0,2i+1=1,PE=cos0=1
 i=1,2i=2     ,PE=sin0=0
