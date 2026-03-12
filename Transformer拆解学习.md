@@ -14,7 +14,7 @@ $$PE_{(pos, 2i)} = \sin\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right)$$
 $$PE_{(pos, 2i+1)} = \cos\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right)$$
 
 pos：这个字在句子中的第几位
-d：嵌入维度
+d：嵌入维度(设，)
 i：具体第几个维度
 
 以上述 我爱中国 为例
