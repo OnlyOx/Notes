@@ -4,7 +4,6 @@
 用一个一行多列的向量
 代替一个词
 
-![](assets/Transformer拆解学习/file-20260225111001620.png)
 # 二、QKV
 ## 1、Positional Encoding（位置编码）
 ![](assets/Transformer拆解学习/file-20260225111001619.png)
@@ -14,7 +13,10 @@ $$PE_{(pos, 2i)} = \sin\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right)$$
 $$PE_{(pos, 2i+1)} = \cos\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right)$$
 
 pos：这个字在句子中的第几位
-d：嵌入维度(设，)
+d：嵌入维度(设，通常较大，如512列)
+
+![](assets/Transformer拆解学习/file-20260225111001620.png)
+
 i：具体第几个维度
 
 以上述 我爱中国 为例
@@ -25,8 +27,8 @@ i： 0-2，用2i或2i+1覆盖整个维度，对应0-4
 
 ![](assets/Transformer拆解学习/file-20260225113655251.png)
 
-PE(pos,2i)=sin()
-PE(pos,2i+1)=cos()
+$$PE_{(pos, 2i)} = \sin\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right)$$
+$$PE_{(pos, 2i+1)} = \cos\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right)$$
 
 pos=0时,对应 "我" 这个字
 i=0,2i=0     ,PE=sin0=0
