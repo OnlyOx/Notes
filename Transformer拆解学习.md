@@ -109,6 +109,8 @@ batch size(批次大小)
 
 ![](assets/Transformer拆解学习/file-20260305154319467.png)
 
+![](assets/Transformer拆解学习/file-20260313092419888.png)
+
 一个**Encoder block** 经过一次多头注意力和多次**Layer Normalization（横向规范化）**、全连接层
 
 六个encoder block组成一个**Encoder**。输出[4x5]的矩阵，称为**Memory(编码信息矩阵)**
